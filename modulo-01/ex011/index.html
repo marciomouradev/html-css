@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head lang="pt-br">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut" href="imagem/favicon.ico" type="imag/x-icon">
+        <title>Mídias em HTML5</title>
+    </head>
+
+    <body>
+        <h1>Imagens dinâmicas</h1>
+        <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+        <picture>
+            <source media="(max-width:750px)" srcset="imagem/foto-p.png" type="image/png">
+            <source media="(max-width:1050px)" srcset="imagem/foto-m.png" type="image/png">
+            <img src="imagem/foto-g.png" alt="Ímagem flexível">
+        </picture>
+
+        <h1>Reproduzindo áudio</h1>
+        <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+
+        <audio preload="metadata" controls loop>
+            <source src="midia/Musica_Corrida_Arrepiar.mp3" type="audio/mpeg">
+            <source src="midia/Musica_Corrida_Arrepiar.ogg" type="audio/ogg">
+            <source src="midia/Musica_Corrida_Arrepiar.wav" type="audio/wav">
+        </audio>
+        <p>Caso o áudio não abra, você pode fazer o download. <a href="midia/Musica_Corrida_Arrepiar.zip" target="_blank" type="application/zip">clique aqui</a></p>
+    </body>
+</html>
